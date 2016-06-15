@@ -1,0 +1,60 @@
+{
+  "name": "punchcard-commit-msg",
+  "version": "1.0.0",
+  "description": "Git Hook for Punchcard style commit messages",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "npm run lint",
+    "test": "npm run nyc",
+    "lint": "npm run lint:js && npm run lint:tests",
+    "lint:js": "eslint index.js lib",
+    "lint:tests": "eslint -c eslint -c ./.eslintrc-ava.yml tests",
+    "ava": "ava | tap-diff",
+    "nyc": "nyc --all npm run ava",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "bin": {
+    "punchcard-commit-msg": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/punchcard-cms/punchcard-commit-msg.git"
+  },
+  "keywords": [
+    "ghooks",
+    "punchcard"
+  ],
+  "author": "Sam Richard <snugug@us.ibm.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/punchcard-cms/punchcard-commit-msg/issues"
+  },
+  "homepage": "https://github.com/punchcard-cms/punchcard-commit-msg#readme",
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "coveralls": "^2.11.9",
+    "eslint": "^2.12.0",
+    "eslint-config-punchcard": "^1.0.1",
+    "ghooks": "^1.2.3",
+    "nyc": "^6.6.1",
+    "tap-diff": "^0.1.1"
+  },
+  "nyc": {
+    "exclude": [
+      "tests/**/*",
+      "index.js"
+    ]
+  },
+  "ava": {
+    "files": [
+      "tests/*.js"
+    ],
+    "failFast": true,
+    "tap": true
+  },
+  "config": {
+    "ghooks": {
+      "commit-msg": "./index.js"
+    }
+  }
+}
