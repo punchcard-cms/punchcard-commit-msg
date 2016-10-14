@@ -56,5 +56,8 @@
     "ghooks": {
       "commit-msg": "./index.js"
     }
+  },
+  "engines": {
+    "node": "^6"
   }
 }
