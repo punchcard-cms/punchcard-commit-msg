@@ -3,7 +3,6 @@ section:
   color: '#c0e6ff'
   labels:
     - emoji
-    - version
     - message
 problem:
   description: 'Issues that make Punchcard feel broken or prevent us from doing further work, but otherwise work as designed. High priority.'
