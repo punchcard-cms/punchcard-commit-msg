@@ -1,11 +1,11 @@
 section:
-  description: Section of Punchcard that this issue belongs to.
+  description: Section of Punchcard Commit Messages that this issue belongs to.
   color: '#c0e6ff'
   labels:
     - emoji
     - message
 problem:
-  description: 'Issues that make Punchcard feel broken or prevent us from doing further work, but otherwise work as designed. High priority.'
+  description: 'Issues that make Punchcard Commit Messages feel broken or prevent us from doing further work, but otherwise work as designed. High priority.'
   color: '#ff5050'
   labels:
     - blocked
@@ -14,7 +14,7 @@ problem:
     - externally blocked
     - hotfix
 experience:
-  description: Issues that affect a user's comprehension or overall enjoyment of Punchcard.
+  description: Issues that affect a user's comprehension or overall enjoyment of Punchcard Commit Messages.
   color: '#ffa573'
   labels:
     - visual design
