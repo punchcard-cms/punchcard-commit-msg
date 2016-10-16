@@ -1,6 +1,6 @@
 {
   "name": "punchcard-commit-msg",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Git Hook for Punchcard style commit messages",
   "main": "index.js",
   "scripts": {
