@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/punchcard-cms/punchcard-commit-msg#readme",
   "devDependencies": {
-    "ava": "^0.15.2",
+    "ava": "^0.17.0",
     "coveralls": "^2.11.9",
     "eslint": "^2.12.0",
     "eslint-config-punchcard": "^1.0.1",
